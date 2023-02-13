@@ -1,0 +1,124 @@
+h4{
+    text-align: center;
+    text-decoration: underline;
+}
+
+.navbar {
+  list-style-type: none;
+  position: absolute;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding-left: 0;
+}
+
+.navbar > li:first-child > a {
+    padding-top: 18px;
+    padding-bottom: 17px;
+}
+
+.navbar > li {
+    border-right: rgba(0, 0, 0, 0.1)  1px solid;;
+}
+
+.navbar > li:last-child  {
+    margin-right: 0;
+    // margin-left: auto;
+    border-left: rgba(0, 0, 0, 0.1) 1px solid;
+    border-right: none;
+}
+
+*:focus-within > .nestlist {
+    display: flex;
+    
+}
+
+.nestlist {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    padding-left: 0;
+    min-width: 200px;
+    display:none;
+    top: 100%;
+    background-color: rgb(203, 203, 203);
+}
+
+li {
+    float: left;
+    list-style-type: none;    
+}
+
+li i.fa-caret-right {
+    position: absolute;
+    right: 5%;
+}
+
+
+li a {
+    display: block;
+    font-size: 1em;
+    font-weight: bold;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    color:#000;
+}
+
+li a:hover {
+    background-color: #fff;
+    color: #000;
+    border: 1px solid #000;
+}
+
+.nestlist li a {
+    text-align: left;
+}
+
+.nestlist li {
+    border-bottom: lightgray 1px solid;
+    position:relative;
+
+}
+
+.nestlist.inner{
+    left: 103%;
+    top:0;
+}
+
+.nestlist::before{
+    content: "";
+    display: block;
+    width:0;
+    height: 0;
+    top: -2%;
+    left: 10%;
+    right:0;
+    position: absolute;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+}
+
+.nestlist.inner::before {
+    top: 8%;
+    left: -2%;
+    border-left: none;
+    border-top: 5px solid transparent;
+    border-bottom: 5px solid transparent;
+}
+
+i{
+    padding-left:7px;
+}
+.infoDiv{
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    padding: 15px;
+    height: 400px;
+    width: 400px;
+    background-color: rgb(131, 227, 227);
+    border-radius: 15px;
+    text-align: center;
+}
