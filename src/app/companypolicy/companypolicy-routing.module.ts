@@ -12,15 +12,15 @@ const routes: Routes = [
      children:[
       {
         path: 'timelog',
-        component: TimelogComponent
+        component: TimelogComponent,
       },
       {
         path: 'timesheet',
-        component: TimesheetComponent
+        component: TimesheetComponent,
       },
       {
         path: 'requestsheet',
-        component: RequestsheetComponent
+        component: RequestsheetComponent,
       }
      ]
   },

@@ -1,11 +1,16 @@
 <!-- <h6>{{ title }}</h6> -->
 <!-- <button type="button" routerLink="">Home</button> -->
 
-<h4>Angular Task - 2 : Nested Routing - Bhavy</h4>
+<!-- <app-fade></app-fade> -->
+
+<h4>Angular Task - 2.1 : Routing with Animation & Breadcrumb - Bhavy</h4>
+
+<div class="breadcrumbContainer"></div>
 
 <div id="page-head" class="container-fluid">
   <div>
     <ul class="navbar">
+      <li><a href="">Hello</a></li>
       <li>
         <a href="" routerLink="/">Home</a>
       </li>
@@ -17,53 +22,56 @@
             <a href="#timetracker" routerLink="/timetracker">Time Tracker</a>
           </li>
           <li>
-            <a href="#companypolicy" routerLink="/companypolicy"
-              >Company Policy <i class="fas fa-caret-right"></i
-            ></a>
+            <a href="#companypolicy" routerLink="/companypolicy">
+              Company Policy
+              <i class="fas fa-caret-right"></i>
+            </a>
             <ul class="nestlist inner">
               <li>
-                <a href="#timelog" routerLink="/companypolicy/timelog"
-                  >Time Log</a
-                >
+                <a href="#timelog" routerLink="/companypolicy/timelog">
+                  Time Log
+                </a>
               </li>
               <li>
-                <a href="#timesheet" routerLink="/companypolicy/timesheet"
-                  >Time Sheet</a
-                >
+                <a href="#timesheet" routerLink="/companypolicy/timesheet">
+                  Time Sheet
+                </a>
               </li>
               <li>
-                <a href="#request" routerLink="/companypolicy/requestsheet"
-                  >Request Sheet</a
-                >
+                <a href="#request" routerLink="/companypolicy/requestsheet">
+                  Request Sheet
+                </a>
               </li>
             </ul>
           </li>
           <li>
-            <a href="#leavemanagement" routerLink="/leavemanagement"
-              >Leave Management <i class="fas fa-caret-right"></i
-            ></a>
+            <a href="#leavemanagement" routerLink="/leavemanagement">
+              Leave Management
+              <i class="fas fa-caret-right"></i>
+            </a>
             <ul class="nestlist inner">
               <li>
-                <a href="#" routerLink="/leavemanagement/approvedleaves"
-                  >Approved Leaves</a
-                >
+                <a href="#" routerLink="/leavemanagement/approvedleaves">
+                  Approved Leaves
+                </a>
               </li>
               <li>
-                <a href="#" routerLink="/leavemanagement/rejectedleaves"
-                  >Rejected Leaves</a
-                >
+                <a href="#" routerLink="/leavemanagement/rejectedleaves">
+                  Rejected Leaves
+                </a>
               </li>
             </ul>
           </li>
           <li>
-            <a href="#payroll" routerLink="/payroll">Payroll</a>
+            <a href="#payroll" routerLink="/payroll"> Payroll </a>
           </li>
         </ul>
       </li>
       <li>
-        <a href="javascript:void(0)"
-          >Password Management<i class="fas fa-caret-down"></i
-        ></a>
+        <a href="javascript:void(0)">
+          Password Management
+          <i class="fas fa-caret-down"></i>
+        </a>
         <ul class="nestlist">
           <li>
             <a href="#password" routerLink="/password">Password</a>
@@ -78,9 +86,9 @@
             <a href="#togglereport" routerLink="/togglereport">Toggle Report</a>
           </li>
           <li>
-            <a href="#toggledashboard" routerLink="/toggledashboard"
-              >Toggle Dashboard</a
-            >
+            <a href="#toggledashboard" routerLink="/toggledashboard">
+              Toggle Dashboard
+            </a>
           </li>
         </ul>
       </li>
@@ -88,7 +96,14 @@
   </div>
 </div>
 
-<div class="infoDiv">
+<div
+  class="infoDiv"
+  [@enlarge]="isEnlarge ? 'end' : 'start'"
+  [@rotate]="isRotate ? 'left' : 'right'"
+>
   <h3>DATA</h3>
+  <button (click)="triggerAnimation()">{{ this.buttonText }}</button>
+  <button (click)="rotation()">{{ this.rotateText }}</button>
+
   <router-outlet></router-outlet>
 </div>

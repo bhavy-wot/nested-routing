@@ -18,14 +18,14 @@ h4{
 }
 
 .navbar > li {
-    border-right: rgba(0, 0, 0, 0.1)  1px solid;;
+    // border-right: rgba(0, 0, 0, 0.1)  1px solid;;
 }
 
 .navbar > li:last-child  {
     margin-right: 0;
     // margin-left: auto;
-    border-left: rgba(0, 0, 0, 0.1) 1px solid;
-    border-right: none;
+    // border-left: rgba(0, 0, 0, 0.1) 1px solid;
+    // border-right: none;
 }
 
 *:focus-within > .nestlist {
@@ -67,9 +67,9 @@ li a {
 }
 
 li a:hover {
-    background-color: #fff;
+    background-color: #b9a1a1;
     color: #000;
-    border: 1px solid #000;
+    // border: 1px solid #000;
 }
 
 .nestlist li a {
@@ -77,9 +77,8 @@ li a:hover {
 }
 
 .nestlist li {
-    border-bottom: lightgray 1px solid;
+    // border-bottom: lightgray 1px solid;
     position:relative;
-
 }
 
 .nestlist.inner{
@@ -96,16 +95,16 @@ li a:hover {
     left: 10%;
     right:0;
     position: absolute;
-    border-left: 5px solid transparent;
-    border-right: 5px solid transparent;
+    // border-left: 5px solid transparent;
+    // border-right: 5px solid transparent;
 }
 
 .nestlist.inner::before {
     top: 8%;
     left: -2%;
     border-left: none;
-    border-top: 5px solid transparent;
-    border-bottom: 5px solid transparent;
+    // border-top: 5px solid transparent;
+    // border-bottom: 5px solid transparent;
 }
 
 i{
@@ -116,9 +115,8 @@ i{
     top: 20%;
     left: 50%;
     padding: 15px;
-    height: 400px;
-    width: 400px;
     background-color: rgb(131, 227, 227);
-    border-radius: 15px;
+    // border-radius: 15px;
     text-align: center;
+    width: 400px;
 }
