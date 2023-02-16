@@ -1,8 +1,6 @@
 import { Component } from '@angular/core';
 import { trigger, state, style, animate, transition } from '@angular/animations';
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-
-
+// import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @Component({
   selector: 'app-root',
@@ -12,7 +10,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     trigger('enlarge', [ 
        state('start', style({ 
           height: '200px', 
-          color: 'red',
+          color: 'pink',
        })), 
        state('end', style({ 
           height: '400px', 

@@ -12,13 +12,13 @@ h4{
   padding-left: 0;
 }
 
-.navbar > li:first-child > a {
-    padding-top: 18px;
-    padding-bottom: 17px;
-}
+//.navbar > li:first-child > a {
+//    padding-top: 18px;
+//    padding-bottom: 17px;
+//}
 
 .navbar > li {
-    // border-right: rgba(0, 0, 0, 0.1)  1px solid;;
+    // border-right: rgba(0, 0, 0, 0.1) 1px solid;
 }
 
 .navbar > li:last-child  {
@@ -30,7 +30,6 @@ h4{
 
 *:focus-within > .nestlist {
     display: flex;
-    
 }
 
 .nestlist {
@@ -64,12 +63,15 @@ li a {
     padding: 14px 16px;
     text-decoration: none;
     color:#000;
+    transition: 0.5s all ease-in-out;
+    background-color: #E9F8F9;
+    border: 1px solid;
 }
 
 li a:hover {
-    background-color: #b9a1a1;
-    color: #000;
-    // border: 1px solid #000;
+    background-color: #71dce6;
+    // color: #fff; 
+    border: 1px solid #000;
 }
 
 .nestlist li a {
@@ -115,8 +117,35 @@ i{
     top: 20%;
     left: 50%;
     padding: 15px;
-    background-color: rgb(131, 227, 227);
+    background-color: #6679c4;
     // border-radius: 15px;
     text-align: center;
     width: 400px;
+}
+
+.breadcrumbContainer{
+    width: 500px;
+    // border: 2px solid #1f1f1f;
+    margin: 15px 0;
+}
+
+.breadcrumb{
+    font-size: 20px;
+    padding: 10px 0;
+}
+
+.animationContainer{
+    display: flex;
+    justify-content: space-between;
+    max-width: 250px;
+    margin: 0 auto;
+}
+
+.animationContainer button {
+    padding: 10px 15px;
+    font-size: 14px;
+    background-color: chocolate;
+    border: none;
+    border-radius: 6px;
+    border: 2px solid #1f1f1f;
 }

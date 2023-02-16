@@ -10,11 +10,13 @@ const routes: Routes = [
      children: [
       {
         path: 'approvedleaves',
-        component: ApprovedleavesComponent
+        component: ApprovedleavesComponent,
+        data: { breadcrumb: 'Approved Leaves'} 
       },
       {
         path: 'rejectedleaves',
-        component: RejectedleavesComponent  
+        component: RejectedleavesComponent,
+        data: { breadcrumb: 'Rejected Leaves'} 
       }
      ]
   }

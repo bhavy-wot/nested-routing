@@ -13,14 +13,18 @@ const routes: Routes = [
       {
         path: 'timelog',
         component: TimelogComponent,
+        data: { breadcrumb: 'Time log'} 
       },
       {
         path: 'timesheet',
         component: TimesheetComponent,
+        data: { breadcrumb: 'Time Sheet'} 
       },
       {
         path: 'requestsheet',
         component: RequestsheetComponent,
+        data: { breadcrumb: 'Request Sheet'} 
+
       }
      ]
   },

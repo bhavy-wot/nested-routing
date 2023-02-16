@@ -5,6 +5,8 @@ import { AppComponent } from './app.component';
 import { FadeComponent } from './fade/fade.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
+import {BreadcrumbModule} from 'xng-breadcrumb';
+
 
 
 @NgModule({
@@ -15,7 +17,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    BreadcrumbModule
   ],
   providers: [],
   bootstrap: [AppComponent]

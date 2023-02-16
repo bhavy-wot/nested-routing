@@ -1,25 +1,26 @@
-<!-- <h6>{{ title }}</h6> -->
-<!-- <button type="button" routerLink="">Home</button> -->
-
-<!-- <app-fade></app-fade> -->
-
 <h4>Angular Task - 2.1 : Routing with Animation & Breadcrumb - Bhavy</h4>
 
-<div class="breadcrumbContainer"></div>
+<!-- Breadcrumb -->
+<div class="breadcrumbContainer">
+  <xng-breadcrumb class="breadcrumb" separator=">"></xng-breadcrumb>
+</div>
 
 <div id="page-head" class="container-fluid">
   <div>
     <ul class="navbar">
-      <li><a href="">Hello</a></li>
+      <!-- Home -->
       <li>
         <a href="" routerLink="/">Home</a>
       </li>
+      <!-- HRMS -->
       <li>
-        <a href="javascript:void(0)">HRMS<i class="fas fa-caret-down"></i></a>
-
+        <a href="javascript:void(0)">
+          HRMS
+          <i class="fas fa-caret-down"></i>
+        </a>
         <ul class="nestlist">
           <li>
-            <a href="#timetracker" routerLink="/timetracker">Time Tracker</a>
+            <a href="#timetracker" routerLink="/timetracker"> Time Tracker </a>
           </li>
           <li>
             <a href="#companypolicy" routerLink="/companypolicy">
@@ -67,6 +68,7 @@
           </li>
         </ul>
       </li>
+      <!-- Password Management -->
       <li>
         <a href="javascript:void(0)">
           Password Management
@@ -74,13 +76,16 @@
         </a>
         <ul class="nestlist">
           <li>
-            <a href="#password" routerLink="/password">Password</a>
+            <a href="#password" routerLink="/password"> Password </a>
           </li>
         </ul>
       </li>
-
+      <!-- Toggle -->
       <li>
-        <a href="javascript:void(0)">Toggle<i class="fas fa-caret-down"></i></a>
+        <a href="javascript:void(0)">
+          Toggle
+          <i class="fas fa-caret-down"></i>
+        </a>
         <ul class="nestlist">
           <li>
             <a href="#togglereport" routerLink="/togglereport">Toggle Report</a>
@@ -101,9 +106,11 @@
   [@enlarge]="isEnlarge ? 'end' : 'start'"
   [@rotate]="isRotate ? 'left' : 'right'"
 >
+  <div class="animationContainer">
+    <button (click)="triggerAnimation()">{{ this.buttonText }}</button>
+    <button (click)="rotation()">{{ this.rotateText }}</button>
+  </div>
   <h3>DATA</h3>
-  <button (click)="triggerAnimation()">{{ this.buttonText }}</button>
-  <button (click)="rotation()">{{ this.rotateText }}</button>
 
   <router-outlet></router-outlet>
 </div>
